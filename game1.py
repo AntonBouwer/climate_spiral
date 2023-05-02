@@ -93,14 +93,13 @@ class Game:
     def draw(self):
         # Fill the screen with a dark blue color
         self.screen.fill((0, 0, 50))
-        # Load the background image and blit it to the screen
+        # Draw the lines
         self.draw_lines()
+        # Load the background image and blit it to the screen
         background_image = pg.image.load("spiral.png")
         self.screen.blit(
             background_image, screen_center - background_image.get_rect().center
         )
-        # Draw the lines
-        # self.draw_lines()
         self.year_text = pg.font.SysFont("Arial", 36).render(
             str(self.year), True, orange
         )

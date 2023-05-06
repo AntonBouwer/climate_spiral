@@ -87,7 +87,7 @@ class Game:
                 set_color(data[i]),
                 screen_center + start_pos,
                 screen_center + end_pos,
-                1,
+                2,
             )
 
     def draw(self):
